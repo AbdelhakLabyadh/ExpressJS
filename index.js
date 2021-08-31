@@ -10,7 +10,7 @@ const WorkingTime = (req, res, next) => {
     let date = new Date();
     let days = date.getDay();
     let hours = date.getHours();
-    if ( 5 < days < 1 || 22 < hours < 9 ) {
+    if ( 5 < days < 1 || 17 < hours < 9 ) {
         app.get('/', function(req, res){
             res.render('WorkingHours');
          });    } else {
